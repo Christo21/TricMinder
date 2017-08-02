@@ -39,7 +39,8 @@ public class System extends AppCompatActivity {
         String nama = "Christo";
         String tarif = "R1";
         String daya = "1000";
-        user = dbDataSource.createUser(id, no, nama, tarif, daya);
+        //user = dbDataSource.createUser(id, no, nama, tarif, daya);
+
         credit = (ProgressBar) findViewById(R.id.progressBar1);
 
 
