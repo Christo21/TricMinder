@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
                     if (Number.length() < 11 || Number.length() > 12) {
                         Toast.makeText(Login.this, "Input Salah", Toast.LENGTH_SHORT).show();
                     } else {
-                            Toast.makeText(Login.this, "Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(getApplicationContext(), IsiDataUser.class);
                             startActivity(i);
                         //}
