@@ -24,10 +24,10 @@ public class Login extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 if (Number.getText().toString().equals("")) {
-                    Toast.makeText(Login.this, "Input Text Kosong..Tolong masukan IDPelanggan atau No.Meter", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Input Text Kosong..Harap masukkan ID Pelanggan atau No.Meter dengan benar", Toast.LENGTH_SHORT).show();
                 } else {
                     if (Number.length() < 11 || Number.length() > 12) {
-                        Toast.makeText(Login.this, "Input Salah", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this, "Wrong Input", Toast.LENGTH_SHORT).show();
                     } else {
                             Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(getApplicationContext(), IsiDataUser.class);
