@@ -29,8 +29,8 @@ public class DBHandler  extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE);
-//        String sql = "INSERT INTO pelanggan (idPelanggan, nomorMeter, Nama, Tarif, Daya) VALUES ('12345654321', '12345654321', 'Christoper J', 'R1','1000');";
-//        db.execSQL(sql);
+        String sql = "INSERT INTO pelanggan (idPelanggan, nomorMeter, Nama, Tarif, Daya) VALUES ('12345654321', '12345654321', 'Christoper J', 'R1','1000');";
+        db.execSQL(sql);
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
